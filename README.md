@@ -4,7 +4,7 @@
 
 ## Get Started
 1. clone the repo
-2. cd to MuSiQue
+2. cd to MuSiQue_replication
 3. build the image
 ```console
 docker build --build-arg UID=$(id -u) -t musique:latest .
