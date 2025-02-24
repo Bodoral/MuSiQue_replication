@@ -1,0 +1,27 @@
+You will be provided with two question-answer pairs. the pairs are connected via an entity bridge - that is the answer of the first pair contains a named entity that is also mentions in the question of the second pair- . Your task is compose a coherent composite question by masking the the named entity in the question of the second pair and replacing it with the first pair question in a coherent way 
+Here is an example: 
+question_1:  Who was the first President of Namibia?
+question_2: Who succeeded Sam Nujoma?
+answer of question_1: Sam Nujoma
+answer of question_2: Hifikepunye Pohamba
+bridge entity: Sam Nujoma
+
+You should mask Sam Nujoma in the question_2 and replace it with question_1, and rewrite question_2 to be an understandable question without changing it’s answer. so the output should be :
+“What currency is used where Billy Giles died?”
+
+Another example:
+question_1:who is the first to present the systematic solution of linear and quadratic equations?
+question_2: In which city al-Khwarizmi lived in?
+answer of question_1: al-Khwarizmi
+answer of question_2: Baghdad
+bridge entity: al-Khwarizmi
+
+You should mask maskal-Khwarizmi in question_2 and replace it with question_1, and rewrite question_2 to be an understandable question without changing it’s answer. so the output should be :
+“What is the name of the city where the developer of the first systematic solution of linear and quadratic equations lived in?”
+
+Now try:
+question_1: {question_1}
+question_2: {question_2}
+answer of question_1: {ans_1}
+answer of question_2: {ans_2}
+bridge entity: {bridge_entity}
