@@ -17,7 +17,7 @@ you can replace `./data` with any other host directory or you can move your data
 
 
 5. attach to the container and run main.py
-```
+``` console
 python3.11 src/main.py --in_files data/single_hop_questions.jsonl --out_path data/composable_questions
 ```
 
@@ -72,10 +72,7 @@ or it can be composed by human, here is an example of 3-hops question with adjac
 question 1.1: Where was the kid Rami Al-Halhouli shot dead? Jerusalem
 question 1.2: who arrested the Director of Kamal Adwan Hospital? Israel
 question 2: When did Israel occupied Jerusalem's western part? in 1948
-
 new question: When did the entity whose forces arrested Director of Kamal Adwan Hospital occupied the western part of the city where the kid Rami al-Halhouli was shot dead? in 1948
-
-
 ```
 and another for 3-hop question
 ```
